@@ -7,6 +7,7 @@ class SanctuaryGateway {
     public string $placeholderStone = "NONE"; // ←これは残す
     // ==========================================
     public bool $sunStone = true;
+    public bool $moonStone = true;
     public function unlock(): void {
         echo "=== 日輪の門 封印の間 ===\n";
         usleep(500000);
