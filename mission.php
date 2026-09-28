@@ -6,11 +6,10 @@ class SanctuaryGateway {
     // 担当B: public bool $moonStone = true;
     public string $placeholderStone = "NONE"; // ←これは残す
     // ==========================================
-
+    public bool $sunStone = true;
     public function unlock(): void {
         echo "=== 日輪の門 封印の間 ===\n";
         usleep(500000);
-
         $sun = $this->sunStone ?? false;
         $moon = $this->moonStone ?? false;
 
